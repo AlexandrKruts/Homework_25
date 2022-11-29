@@ -3,35 +3,36 @@ import { NavLink, Outlet } from "react-router-dom";
 const Header = () => {
   
   return (
-    <div>
-      <h1>React Router</h1>
-
-      <nav>
-        <ul>
-          <li>
+    <div className="header">
+      
+      <h2 className="main">React Router</h2>
+      
+      <nav className="nav">
+        <ul className="menu">
+          <li className="item-header">
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
               to="/"
               end
             >
-              Home
+              <p className="text">Home</p>
             </NavLink>
           </li>
-          <li>
+          <li className="item-header">
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
               to="users"
             >
-              Users
+              <p className="text">Users</p>
             </NavLink>
           </li>
        
-          <li>
+          <li className="item-header">
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
               to="hotels"
             >
-              Hotels
+              <p className="text">Hotels</p>
             </NavLink>
           </li>
 
@@ -40,7 +41,7 @@ const Header = () => {
 
       <hr />
 
-      <Outlet />
+      <Outlet  />
 
       
     </div>

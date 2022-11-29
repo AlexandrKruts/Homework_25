@@ -1,6 +1,5 @@
 let Hotels=()=>{
-    return (
-        <h1>hello</h1>
-    )
+    return null
+        
 }
 export default Hotels

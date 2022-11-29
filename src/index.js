@@ -7,8 +7,9 @@ import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Home from "./routes/Home";
 import Users from "./routes/Users";
-import User from "./routes/Hotels";
-import Hotels from "./routes/Hotels";
+import User from "./routes/User";
+
+import Error from "./routes/Error";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,8 @@ const router = createBrowserRouter([
           },
           {
             path: "hotels",
-            element: <Hotels />,
+            element: <Error />,
+            
           },
       ]
   },
